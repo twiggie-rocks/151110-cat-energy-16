@@ -1,0 +1,28 @@
+.programs__item {
+  background-color: #f2f3f3;
+}
+
+.programs__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  font-family: $oswald;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $arial;
+  color: #444444;
+}
+
+.programs__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $oswald;
+  color: #111111;
+  text-transform: uppercase;
+  text-decoration: none;
+}
