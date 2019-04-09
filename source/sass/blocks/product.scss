@@ -1,0 +1,22 @@
+.product {
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+.product__name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: $oswald;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.product__properties {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $arial;
+  color: #444444;
+}
