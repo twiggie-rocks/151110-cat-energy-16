@@ -1,3 +1,37 @@
 .page-footer {
   background-color: #f2f3f3;
 }
+
+.page-footer__wrapper {
+  width: 280px;
+  margin: auto;
+}
+
+.page-footer__logo-image {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 780px;
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .page-footer__logo-image {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 1200px;
+  }
+}
