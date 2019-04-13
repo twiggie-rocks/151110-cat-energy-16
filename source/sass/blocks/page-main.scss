@@ -21,3 +21,23 @@
 .page-main__features {
   margin-bottom: 45px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__programs {
+    margin-bottom: 50px;
+  }
+
+  .page-main__features {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__programs {
+    margin-bottom: 80px;
+  }
+
+  .page-main__features {
+    margin-bottom: 25px;
+  }
+}
