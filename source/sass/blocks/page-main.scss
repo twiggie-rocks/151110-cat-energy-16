@@ -1,3 +1,8 @@
+.page-main__wrapper {
+  width: 280px;
+  margin: auto;
+}
+
 .page-main__title {
   margin: 0;
   margin-bottom: 35px;
@@ -23,6 +28,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    width: 708px;
+  }
+
+  .page-main__title {
+    margin-bottom: 155px;
+
+    font-size: 60px;
+  }
+
   .page-main__programs {
     margin-bottom: 50px;
   }
@@ -33,6 +48,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__wrapper {
+    width: 1200px;
+  }
+
   .page-main__programs {
     margin-bottom: 80px;
   }
