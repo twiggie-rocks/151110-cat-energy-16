@@ -1,0 +1,15 @@
+.page-header__banner {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__banner {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__banner {
+    margin-bottom: 80px;
+  }
+}

@@ -4,7 +4,7 @@
 
 .banner__background {
   padding-top: 25px;
-  padding-bottom: 167px;
+  padding-bottom: 50%;
 
   background-color: #68b738;
   background-image: url("/img/index-background-mobile@1x.jpg");
@@ -65,13 +65,15 @@
   }
 
   .banner__background {
+    padding-bottom: 0;
+
     background: none;
   }
 
   .banner__image {
     width: 709px;
     height: 609px;
-    margin-top: -237px;
+    margin-top: -70px;
   }
 
   .banner__title {
