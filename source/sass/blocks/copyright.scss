@@ -1,7 +1,21 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .copyright__link {
   font-size: 16px;
   line-height: 16px;
   font-family: $arial;
   color: #444444;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 165px;
+  }
 }

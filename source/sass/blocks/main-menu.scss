@@ -5,13 +5,40 @@
   font-size: 20px;
   font-weight: 500;
   font-family: $oswald;
+  color: #000000;
+  text-align: center;
   text-transform: uppercase;
 
   list-style-type: none;
 }
 
 .main-menu__link {
-  color: #000000;
-  background-color: #ffffff;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-top: 1px solid #ededed;
+
+  color: inherit;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+
+    font-weight: 400;
+  }
+
+  .main-menu__link {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu--index {
+    color: #ffffff;
+  }
 }

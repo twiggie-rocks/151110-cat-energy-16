@@ -2,18 +2,21 @@
 
 @import "fonts";
 @import "variables";
+@import "common";
 @import "blocks/visually-hidden";
 @import "blocks/page-main";
 @import "blocks/button";
 
 /* Блоки в шапке */
 
+@import "blocks/page-header";
 @import "blocks/main-menu";
 
 /* Блоки в футере */
 
 @import "blocks/page-footer";
 @import "blocks/copyright";
+@import "blocks/social";
 
 /* Блоки главной страницы */
 
@@ -25,3 +28,4 @@
 
 @import "blocks/catalog";
 @import "blocks/product";
+@import "blocks/show-more";
