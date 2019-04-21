@@ -1,10 +1,17 @@
 .banner {
+  position: relative;
+
   text-align: center;
 }
 
-.banner__background {
-  padding-top: 25px;
-  padding-bottom: 50%;
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 305px;
+  z-index: -1;
 
   background-color: #68b738;
   background-image: url("/img/index-background-mobile@1x.jpg");
@@ -12,10 +19,19 @@
   background-size: cover;
 }
 
+.banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: auto;
+}
+
 .banner__title {
   margin: 0;
   padding: 0;
   margin-bottom: 19px;
+  padding-top: 29px;
 
   font-size: 36px;
   font-weight: 400;
@@ -35,24 +51,13 @@
   text-transform: uppercase;
 }
 
-.banner__wrapper {
-  width: 280px;
-  margin: auto;
-}
-
-.banner__image {
-  margin-top: -140px;
-}
-
 .banner__button {
   width: 280px;
 
+  order: 3;
+
   font-size: 14px;
   line-height: 18px;
-}
-
-.banner__button--top {
-  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,25 +65,27 @@
       text-align: left;
   }
 
-  .banner__wrapper {
-    width: 708px;
+  .banner::before {
+    display: none;
   }
 
-  .banner__background {
-    padding-bottom: 0;
-
-    background: none;
+  .banner__wrapper {
+    width: 708px;
+    align-items: baseline;
   }
 
   .banner__image {
     width: 709px;
     height: 609px;
-    margin-top: -70px;
+    margin-top: -76px;
+
+    z-index: -1;
   }
 
   .banner__title {
     width: 415px;
     margin-bottom: 33px;
+    margin-left: 90px;
 
     font-size: 60px;
     line-height: 60px;
@@ -87,6 +94,7 @@
 
   .banner__slogan {
     margin-bottom: 48px;
+    margin-left: 90px;
 
     font-size: 20px;
     line-height: 20px;
@@ -95,15 +103,39 @@
 
   .banner__button {
     width: 245px;
+    margin-left: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    order: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner__wrapper {
+    width: 960px;
   }
 
-  .banner__button--top {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
+  .banner__image {
+    align-self: flex-end;
+    width: 552px;
+    height: 499px;
+    margin-top: -370px;
+    margin-right: 35px;
   }
 
-  .banner__button--bottom {
-    display: none;
+  .banner__title {
+    margin-left: 0;
+  }
+
+  .banner__slogan {
+    margin-left: 0;
+  }
+
+  .banner__button {
+    margin-left: 0;
   }
 }

@@ -6,29 +6,28 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <img class="page-header__logo-image" src="http://placehold.it/191x39" width="191" height="39" alt="Логотип Кэт Энерджи">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-menu">
-            <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор программы</a></li>
-          </ul>
+    <header class="page-header page-header--index">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-container">
+          <img class="page-header__logo-image" src="http://placehold.it/191x39" width="191" height="39" alt="Логотип Кэт Энерджи">
+          <button class="page-header__menu-toggle" type="button">Открыть меню</button>
         </div>
-      </nav>
-      <section class="page-header__banner banner">
-          <div class="banner__background">
-            <div class="banner__wrapper">
-              <h1 class="banner__title">Функциональное питание для котов</h1>
-              <p class="banner__slogan">Занялся собой? Займись котом!</p>
-              <a href="form.html" class="button banner__button banner__button--top">Подобрать программу</a>
-            </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list main-menu main-menu--index">
+              <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор программы</a></li>
+            </ul>
           </div>
-          <div class="banner__wrapper">
-            <img class="banner__image" src="http://placehold.it/280x270" width="280" height="270" alt="Пример продукта Cat Energy">
-            <a href="form.html" class="button banner__button banner__button--bottom">Подобрать программу</a>
+        </nav>
+      </div>
+      <section class="page-header__banner banner">
+        <div class="banner__wrapper">
+          <h1 class="banner__title">Функциональное питание для котов</h1>
+          <p class="banner__slogan">Занялся собой? Займись котом!</p>
+          <a href="form.html" class="button banner__button">Подобрать программу</a>
+          <img class="banner__image" src="http://placehold.it/280x270" width="280" height="270" alt="Пример продукта Cat Energy">
         </div>
       </section>
     </header>
