@@ -27,21 +27,23 @@
 }
 
 .features__item {
-  position: relative;
-
+  display: flex;
+  align-items: center;
   padding-bottom: 30px;
-  padding-left: 80px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
+.features__icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
 
-    background-color: #68b738;
-  }
+  background-color: #68b738;
+}
+
+.features__text {
+  max-width: 192px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
