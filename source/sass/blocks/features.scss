@@ -58,8 +58,22 @@
   }
 
   .features__item {
+    flex-wrap: wrap;
     width: 250px;
     margin-right: 100px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .features__icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 37px;
+  }
+
+  .features__text {
+    max-width: 250px;
   }
 }
 
