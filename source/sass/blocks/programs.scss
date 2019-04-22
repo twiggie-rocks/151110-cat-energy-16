@@ -5,6 +5,10 @@
 
 .programs__item {
   margin-bottom: 20px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 
   background-color: #f2f3f3;
 }
@@ -14,8 +18,11 @@
 }
 
 .programs__title {
+  position: relative;
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
+  padding-left: 70px;
 
   font-size: 24px;
   font-weight: 400;
@@ -23,22 +30,53 @@
   font-family: $oswald;
   color: #111111;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: #68b738;
+  }
 }
 
 .programs__description {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-bottom: 23px;
+
   font-size: 14px;
   line-height: 18px;
   font-family: $arial;
   color: #444444;
+
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .programs__link {
+  position: relative;
+
   font-size: 16px;
   line-height: 16px;
   font-family: $oswald;
   color: #111111;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -40px;
+    width: 25px;
+    height: 12px;
+
+    background-color: #111111;
+  }
 }
 
 @media (min-width: $tablet-width) {

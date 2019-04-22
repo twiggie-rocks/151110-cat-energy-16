@@ -27,7 +27,21 @@
 }
 
 .features__item {
+  position: relative;
+
   padding-bottom: 30px;
+  padding-left: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+  }
 }
 
 @media (min-width: $tablet-width) {
