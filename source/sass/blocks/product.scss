@@ -27,10 +27,17 @@
 }
 
 .product__properties {
+  width: 135px;
+
   font-size: 12px;
   line-height: 16px;
   font-family: $arial;
   color: #444444;
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .product__button {
@@ -65,15 +72,24 @@
 
   .product__name {
     width: 130px;
+    margin: auto;
     margin-bottom: 28px;
 
     font-size: 20px;
   }
 
   .product__properties {
+    width: 250px;
     margin-bottom: 30px;
 
     font-size: 16px;
+
+    tr {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 
   .product__button {
@@ -84,6 +100,10 @@
 @media (min-width: $desktop-width) {
   .product {
     width: 245px;
+  }
+
+  .product__properties {
+    width: 170px;
   }
 
   .product__button {
