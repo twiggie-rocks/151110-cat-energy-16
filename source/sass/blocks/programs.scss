@@ -87,6 +87,34 @@
 
   .programs__item {
     margin-bottom: 30px;
+    padding-top: 81px;
+    padding-right: 62px;
+    padding-bottom: 62px;
+    padding-left: 52px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+  }
+
+  .programs__icon {
+    display: none;
+  }
+
+  .programs__description {
+    max-width: 370px;
+    margin-bottom: 60px;
+    padding-bottom: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -100,9 +128,23 @@
     width: 570px;
     margin-right: 80px;
     margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
-  .programs__item:last-child {
-    margin-right: 0;
+  .programs__icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programs__title {
+    max-width: 300px;
+  }
+
+  .programs__description {
+    max-width: 500px;
   }
 }
