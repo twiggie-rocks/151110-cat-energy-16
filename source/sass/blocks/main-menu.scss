@@ -12,15 +12,26 @@
   list-style-type: none;
 }
 
+.main-menu__item {
+  border-top: 1px solid #ededed;
+}
+
 .main-menu__link {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
 
-  border-top: 1px solid #ededed;
-
   color: inherit;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -32,7 +43,7 @@
     font-weight: 400;
   }
 
-  .main-menu__link {
+  .main-menu__item {
     border: none;
   }
 }
@@ -40,5 +51,14 @@
 @media (min-width: $desktop-width) {
   .main-menu--index {
     color: #ffffff;
+
+    .main-menu__link:hover,
+    .main-menu__link:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .main-menu__link:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
