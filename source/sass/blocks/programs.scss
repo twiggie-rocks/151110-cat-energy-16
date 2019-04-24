@@ -5,10 +5,10 @@
 
 .programs__item {
   margin-bottom: 20px;
-  padding-top: 40px;
+  padding-top: 22px;
   padding-right: 20px;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 22px;
 
   background-color: #f2f3f3;
 }
@@ -47,7 +47,7 @@
 
 .programs__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   padding-bottom: 23px;
 
   font-size: 14px;
@@ -71,8 +71,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 5px;
-    right: -40px;
+    top: 7px;
+    right: -34px;
     width: 25px;
     height: 12px;
 
@@ -86,14 +86,20 @@
   }
 
   .programs__item {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 372px;
     margin-bottom: 30px;
-    padding-top: 81px;
+    padding-top: 75px;
     padding-right: 62px;
-    padding-bottom: 62px;
+    padding-bottom: 63px;
     padding-left: 52px;
   }
 
   .programs__title {
+    max-width: 300px;
+
     font-size: 36px;
   }
 
@@ -102,8 +108,7 @@
   }
 
   .programs__description {
-    max-width: 370px;
-    margin-bottom: 60px;
+    max-width: 375px;
     padding-bottom: 0;
 
     font-size: 16px;
@@ -113,6 +118,8 @@
   }
 
   .programs__link {
+    margin-top: auto;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -138,10 +145,6 @@
     display: block;
     width: 100px;
     height: 100px;
-  }
-
-  .programs__title {
-    max-width: 300px;
   }
 
   .programs__description {
