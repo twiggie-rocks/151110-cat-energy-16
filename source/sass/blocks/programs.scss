@@ -59,25 +59,12 @@
 }
 
 .programs__link {
-  position: relative;
-
   font-size: 16px;
   line-height: 16px;
   font-family: $oswald;
   color: #111111;
   text-transform: uppercase;
   text-decoration: none;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 7px;
-    right: -34px;
-    width: 25px;
-    height: 12px;
-
-    background-color: #111111;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -86,6 +73,7 @@
   }
 
   .programs__item {
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -104,7 +92,11 @@
   }
 
   .programs__icon {
-    display: none;
+    position: absolute;
+    right: 42px;
+    top: 90px;
+    width: 200px;
+    height: 200px;
   }
 
   .programs__description {
@@ -142,6 +134,7 @@
   }
 
   .programs__icon {
+    position: static;
     display: block;
     width: 100px;
     height: 100px;
