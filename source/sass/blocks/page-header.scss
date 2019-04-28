@@ -58,8 +58,12 @@
   }
 
   .page-header__wrapper {
-    width: 1200px;
-    margin-bottom: 110px;
+    width: 1220px;
+    margin-bottom: 65px;
+  }
+
+  .page-header__logo-container {
+    margin-top: 42px;
   }
 
   .page-header__logo-image {
@@ -67,14 +71,18 @@
     height: 59px;
   }
 
+  .page-header__main-nav {
+    margin-top: 45px;
+  }
+
   .page-header__banner {
-    margin-bottom: 140px;
+    margin-bottom: 138px;
   }
 
   .page-header--index::after {
     content: "";
     width: 50%;
-    height: 110%;
+    height: 109%;
     position: absolute;
     top: 0;
     right: 0;

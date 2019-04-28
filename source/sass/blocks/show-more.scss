@@ -13,8 +13,6 @@
 }
 
 .show-more__title {
-  position: relative;
-
   margin: 0;
   margin-bottom: 10px;
 
@@ -24,17 +22,6 @@
   font-family: $oswald;
   color: #111111;
   text-transform: uppercase;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: 45%;
-    width: 31px;
-    height: 31px;
-
-    background-color: #f2f2f2;
-  }
 }
 
 .show-more__text {

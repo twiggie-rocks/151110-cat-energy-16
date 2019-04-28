@@ -38,7 +38,7 @@
   .main-menu {
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    min-width: 450px;
     padding-left: 10px;
 
     font-size: 18px;
@@ -84,6 +84,19 @@
 
     .main-menu__link--active::after {
       background-color: #ffffff;
+    }
+  }
+
+  .main-menu {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main-menu__item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

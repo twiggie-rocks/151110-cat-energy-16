@@ -120,7 +120,7 @@
 
 @media (min-width: $desktop-width) {
   .banner__wrapper {
-    width: 960px;
+    width: 1060px;
   }
 
   .banner__image {
@@ -128,7 +128,7 @@
     width: 552px;
     height: 499px;
     margin-top: -370px;
-    margin-right: 35px;
+    margin-right: 130px;
   }
 
   .banner__title {
@@ -137,6 +137,7 @@
 
   .banner__slogan {
     margin-left: 0;
+    margin-bottom: 55px;
   }
 
   .banner__button {
