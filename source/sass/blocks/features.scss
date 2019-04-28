@@ -65,6 +65,7 @@
   }
 
   .features__item {
+    position: relative;
     flex-wrap: wrap;
     width: 250px;
     margin-right: 133px;
@@ -76,6 +77,34 @@
     &:nth-child(2n) {
       margin-right: 0;
     }
+
+    &::after {
+      color: #f2f2f2;
+      font-size: 281px;
+      line-height: 200px;
+      font-family: $oswald;
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .features__item--first::after {
+    content: "1";
+    right: 20px;
+  }
+
+  .features__item--second::after {
+    content: "2";
+  }
+
+  .features__item--third::after {
+    content: "3";
+  }
+
+  .features__item--fourth::after {
+    content: "4";
   }
 
   .features__icon {
