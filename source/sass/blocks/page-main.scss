@@ -1,12 +1,13 @@
 .page-main__wrapper {
-  width: 280px;
+  width: 320px;
   margin: auto;
 }
 
 .page-main__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   padding: 0;
+  padding-left: 20px;
 
   font-size: 36px;
   font-weight: 400;
@@ -16,7 +17,7 @@
 }
 
 .page-main__programs {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .page-main__features {
@@ -29,13 +30,15 @@
   }
 
   .page-main__title {
-    margin-bottom: 155px;
+    margin-bottom: 165px;
+    padding-top: 28px;
+    padding-left: 0;
 
     font-size: 60px;
   }
 
   .page-main__programs {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   .page-main__features {
@@ -45,11 +48,15 @@
 
 @media (min-width: $desktop-width) {
   .page-main__wrapper {
-    width: 1200px;
+    width: 1220px;
+  }
+
+  .page-main__title {
+    padding-top: 0;
   }
 
   .page-main__programs {
-    margin-bottom: 80px;
+    margin-bottom: 73px;
   }
 
   .page-main__features {

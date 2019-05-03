@@ -2,21 +2,21 @@
   position: relative;
 
   text-align: center;
-}
 
-.banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 305px;
-  z-index: -1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64%;
+    z-index: -1;
 
-  background-color: #68b738;
-  background-image: url("/img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-color: #68b738;
+    background-image: url("/img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .banner__wrapper {
@@ -30,7 +30,7 @@
 .banner__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 19px;
+  margin-bottom: 25px;
   padding-top: 29px;
 
   font-size: 36px;
@@ -42,13 +42,17 @@
 
 .banner__slogan {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 29px;
 
   font-size: 14px;
   line-height: 14px;
   font-family: $oswald;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.banner__image {
+  margin-bottom: 3px;
 }
 
 .banner__button {
@@ -77,15 +81,15 @@
   .banner__image {
     width: 709px;
     height: 609px;
-    margin-top: -76px;
+    margin-top: -80px;
 
     z-index: -1;
   }
 
   .banner__title {
     width: 415px;
-    margin-bottom: 33px;
-    margin-left: 90px;
+    margin-bottom: 41px;
+    margin-left: 87px;
 
     font-size: 60px;
     line-height: 60px;
@@ -93,8 +97,8 @@
   }
 
   .banner__slogan {
-    margin-bottom: 48px;
-    margin-left: 90px;
+    margin-bottom: 49px;
+    margin-left: 87px;
 
     font-size: 20px;
     line-height: 20px;
@@ -103,7 +107,7 @@
 
   .banner__button {
     width: 245px;
-    margin-left: 90px;
+    margin-left: 87px;
     padding-top: 15px;
     padding-bottom: 15px;
 
@@ -116,7 +120,7 @@
 
 @media (min-width: $desktop-width) {
   .banner__wrapper {
-    width: 960px;
+    width: 1060px;
   }
 
   .banner__image {
@@ -124,7 +128,7 @@
     width: 552px;
     height: 499px;
     margin-top: -370px;
-    margin-right: 35px;
+    margin-right: 130px;
   }
 
   .banner__title {
@@ -133,6 +137,7 @@
 
   .banner__slogan {
     margin-left: 0;
+    margin-bottom: 55px;
   }
 
   .banner__button {

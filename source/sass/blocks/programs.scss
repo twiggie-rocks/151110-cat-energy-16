@@ -5,6 +5,10 @@
 
 .programs__item {
   margin-bottom: 20px;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 22px;
 
   background-color: #f2f3f3;
 }
@@ -13,7 +17,23 @@
   margin-bottom: 0;
 }
 
+.programs__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.programs__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+  background-color: #68b738;
+}
+
 .programs__title {
+  max-width: 150px;
   margin: 0;
   padding: 0;
 
@@ -26,10 +46,16 @@
 }
 
 .programs__description {
+  margin: 0;
+  margin-bottom: 18px;
+  padding-bottom: 23px;
+
   font-size: 14px;
   line-height: 18px;
   font-family: $arial;
   color: #444444;
+
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .programs__link {
@@ -47,23 +73,80 @@
   }
 
   .programs__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 372px;
     margin-bottom: 30px;
+    padding-top: 75px;
+    padding-right: 62px;
+    padding-bottom: 63px;
+    padding-left: 52px;
+  }
+
+  .programs__title {
+    max-width: 300px;
+
+    font-size: 36px;
+  }
+
+  .programs__icon {
+    position: absolute;
+    right: 42px;
+    top: 90px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programs__description {
+    max-width: 375px;
+    padding-bottom: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  .programs__link {
+    margin-top: auto;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs__wrapper {
     display: flex;
-    width: 1200px;
+    width: 1220px;
   }
 
   .programs__item {
     width: 570px;
     margin-right: 80px;
     margin-bottom: 0;
+    padding-top: 43px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
-  .programs__item:last-child {
-    margin-right: 0;
+  .programs__heading {
+    margin-bottom: 43px;
+  }
+
+  .programs__icon {
+    position: static;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-right: 61px;
+  }
+
+  .programs__description {
+    max-width: 500px;
   }
 }

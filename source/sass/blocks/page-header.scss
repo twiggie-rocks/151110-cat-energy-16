@@ -1,63 +1,43 @@
-.page-header__wrapper {
-  width: 280px;
-  margin: auto;
-}
-
-.page-header__logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .page-header__banner {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 708px;
-    margin-bottom: 60px;
-  }
-
-  .page-header__logo-image {
-    width: 174px;
-    height: 60px;
-  }
-
-  .page-header__menu-toggle {
-    display: none;
+  .page-header {
+    margin-top: 14px;
   }
 
   .page-header__banner {
     margin-bottom: 0;
+  }
+
+  .page-header__main-nav {
+    margin-bottom: 11px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     position: relative;
+    margin-top: 0;
   }
 
-  .page-header__wrapper {
-    width: 1200px;
-    margin-bottom: 110px;
+  .page-header--index .page-header__main-nav {
+    margin-bottom: 65px;
   }
 
-  .page-header__logo-image {
-    width: 203px;
-    height: 59px;
+  .page-header__main-nav {
+    margin-bottom: 62px;
   }
 
   .page-header__banner {
-    margin-bottom: 140px;
+    margin-bottom: 138px;
   }
 
   .page-header--index::after {
     content: "";
     width: 50%;
-    height: 110%;
+    height: 109%;
     position: absolute;
     top: 0;
     right: 0;
