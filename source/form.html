@@ -21,19 +21,76 @@
               <a class="main-menu__link" href="index.html">Главная</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link main-menu__link--active" href="catalog.html">Каталог продукции</a>
+              <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="form.html">Подбор программы</a>
+              <a class="main-menu__link main-menu__link--active" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <!-- Здесь будут блоки, выделенные красным -->
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="get" class="form">
+          <fieldset class="form__general">
+            <label class="form__label">Имя:*
+              <input type="text" name="name" class="form__input form__input--name" placeholder="Барсик">
+            </label>
+            <label class="form__label">Вес (кг):*
+              <input type="number" name="weight" class="form__input form__input--weight" placeholder="7">
+            </label>
+            <label class="form__label">Возраст (лет):
+              <input type="number" name="age" class="form__input form__input--age" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="form__goal">
+            <input type="radio" name="goal" id="goal-weight-loss" value="weight-loss" class="form__radio" checked>
+            <label for="goal-weight-loss">Похудение</label>
+            <input type="radio" name="goal" id="goal-weight-gain" value="weight-gain" class="form__radio">
+            <label for="goal-weight-gain">Набор массы</label>
+            <input type="radio" name="goal" id="goal-none" value="none" class="form__radio">
+            <label for="goal-none">Не знаю (нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="form__contacts">
+            <legend class="form__heading">Контактные данные (владельца кота)</legend>
+            <label class="form__label">E-mail:*
+              <input type="email" name="email" class="form__input form__input--email" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="form__label">Телефон:*
+              <input type="text" name="phone" class="form__input form__input--phone" placeholder="8 (960) 900-60-90">
+            </label>
+          </fieldset>
+          <fieldset class="form__comments">
+            <legend class="form__heading">Комментарий</legend>
+            <textarea name="comment" placeholder="Расскажите обо всех повадках кота" rows="5" class="form__input form__input--comment"></textarea>
+          </fieldset>
+          <fieldset class="form__options">
+            <legend class="form__heading">Дополнительно</legend>
+            <input type="checkbox" name="sweetener" id="options-sweetener" class="form__checkbox" checked>
+            <label for="options-sweetener">Сахарозаменитель</label>
+            <input type="checkbox" name="water" id="options-water" class="form__checkbox">
+            <label for="options-water">Питьевая вода</label>
+            <input type="checkbox" name="milk" id="options-milk" class="form__checkbox">
+            <label for="options-milk">Молоко</label>
+            <input type="checkbox" name="vitamins" id="options-vitamins" class="form__checkbox">
+            <label for="options-vitamins">Витамины</label>
+          </fieldset>
+          <button type="submit" class="button form__button">Отправить заявку</button>
+          <p class="form__info">* — Обязательные поля</p>
+        </form>
+      </div>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__banner">
+        <span class="page-footer__dealers">Приглашаем к сотрудничеству дилеров!</span>
+        <p class="page-footer__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+      </div>
+      <div class="page-footer__map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0589e68e4ebfaa00a3dac5cadbcc0aebec5b589219ed1fc5062ee0609fc2b71c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
       <div class="page-footer__wrapper">
         <img class="page-footer__logo-image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Кэт Энерджи">
         <div class="page-footer__social social">
