@@ -1,3 +1,8 @@
+.extra {
+  width: 280px;
+  margin: auto;
+}
+
 .extra__title {
   margin: 0;
   margin-bottom: 30px;
@@ -10,11 +15,64 @@
   font-family: $oswald;
 }
 
+.extra__list {
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.extra__item {
+  border-top: 1px solid #ededed;
+
+  &:last-child {
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.extra__promo {
+  margin-bottom: 35px;
+}
+
 @media (min-width: $tablet-width) {
+  .extra {
+    width: 100%;
+  }
+
   .extra__title {
     margin-bottom: 75px;
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .extra__list {
+    margin-bottom: 69px;
+  }
+
+  .extra__item {
+    border-right: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+  }
+
+  .extra__promo {
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__list {
+    width: 895px;
+  }
+
+  .extra__item {
+    border-right: none;
+    border-left: none;
   }
 }
