@@ -1,0 +1,50 @@
+.example {
+  padding-top: 33px;
+  padding-bottom: 38px;
+
+  background-color: #f2f2f2;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+  font-family: $oswald;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  font-family: $arial;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding-top: 51px;
+    padding-bottom: 67px;
+
+    background-color: #ffffff;
+  }
+
+  .example__title {
+    margin-bottom: 60px;
+
+    font-size: 60px;
+  }
+
+  .example__text {
+    margin-bottom: 56px;
+
+    line-height: 24px;
+  }
+}
