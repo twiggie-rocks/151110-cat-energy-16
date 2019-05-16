@@ -24,12 +24,39 @@
 }
 
 .programs__icon {
+  position: relative;
+
   width: 50px;
   height: 50px;
   margin-right: 20px;
 
   border-radius: 50%;
   background-color: #68b738;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.programs__icon--weight-loss::before {
+  top: 0;
+  left: 7px;
+  width: 35px;
+  height: 49px;
+
+  background-image: url("/img/icon-cat-slim.svg");
+}
+
+.programs__icon--weight-gain::before {
+  top: 10px;
+  left: -10px;
+  width: 67px;
+  height: 28px;
+
+  background-image: url("/img/icon-cat-pro.svg");
 }
 
 .programs__title {
@@ -99,6 +126,20 @@
     height: 200px;
   }
 
+  .programs__icon--weight-loss::before {
+    top: 0;
+    left: 7px;
+    width: 141px;
+    height: 194px;
+  }
+
+  .programs__icon--weight-gain::before {
+    top: 10px;
+    left: -10px;
+    width: 268px;
+    height: 113px;
+  }
+
   .programs__description {
     max-width: 375px;
     padding-bottom: 0;
@@ -139,11 +180,27 @@
   }
 
   .programs__icon {
-    position: static;
+    position: relative;
+    top: 0;
+    left: 0;
     display: block;
     width: 100px;
     height: 100px;
     margin-right: 61px;
+  }
+
+  .programs__icon--weight-loss::before {
+    top: 0;
+    left: 7px;
+    width: 71px;
+    height: 97px;
+  }
+
+  .programs__icon--weight-gain::before {
+    top: 10px;
+    left: -10px;
+    width: 134px;
+    height: 57px;
   }
 
   .programs__description {
