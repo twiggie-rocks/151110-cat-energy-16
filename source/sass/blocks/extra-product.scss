@@ -21,6 +21,7 @@
 }
 
 .extra-product__properties {
+  width: 100%;
   margin-bottom: 14px;
 
   font-size: 14px;
@@ -30,6 +31,11 @@
 
   border-spacing: 0;
   border-collapse: collapse;
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -54,10 +60,16 @@
   }
 
   .extra-product__properties {
+    width: auto;
     margin-left: auto;
 
     font-size: 16px;
     line-height: 20px;
+
+    td {
+      min-width: 45px;
+      margin-left: 50px;
+    }
   }
 }
 
@@ -74,8 +86,13 @@
   }
 
   .extra-product__properties {
+    width: 290px;
     margin: 0;
     margin-right: 39px;
+
+    td {
+      margin-left: 0;
+    }
   }
 
   .extra-product__button {
