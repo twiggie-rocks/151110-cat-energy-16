@@ -11,6 +11,10 @@
   padding-left: 19px;
 }
 
+.page-footer__banner--index {
+  background-color: #ffffff;
+}
+
 .page-footer__dealers {
   max-width: 125px;
 
@@ -47,6 +51,19 @@
   margin: auto;
   margin-bottom: 30px;
   padding-top: 40px;
+}
+
+.page-footer__index-link {
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
