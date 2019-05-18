@@ -5,7 +5,10 @@
 
 .social__list {
   display: flex;
-  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin: 0 auto;
   padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -13,8 +16,28 @@
   list-style: none;
 }
 
+.social__link:hover path,
+.social__link:focus path,
+.social__link:active path {
+  fill: #68b738;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     border: none;
+  }
+
+  .social__link--vk svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--fb svg {
+    width: 14px;
+    height: 28px;
   }
 }
