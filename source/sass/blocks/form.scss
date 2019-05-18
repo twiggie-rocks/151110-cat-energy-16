@@ -7,6 +7,9 @@
 }
 
 .form__heading {
+  display: flex;
+  align-items: center;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -14,6 +17,21 @@
   line-height: 24px;
   color: #111111;
   text-transform: none;
+
+  &::after {
+    content: "";
+
+    top: 0;
+    right: 0;
+
+    width: 30px;
+    height: 3px;
+    margin-left: 25px;
+
+    background: #68b738;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
 }
 
 .form__fieldset {
@@ -199,6 +217,23 @@
   .form__heading {
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      margin-left: 40px;
+    }
+
+    &::before {
+      content: "";
+
+      top: 0;
+      right: 0;
+
+      width: 30px;
+      height: 3px;
+      margin-right: 40px;
+
+      background: #68b738;
+    }
   }
 
   .form__button-wrapper {
@@ -217,6 +252,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form__heading::before {
+    width: 70px;
+  }
+
   .form__button {
     width: 568px;
 
