@@ -136,12 +136,39 @@
   font-family: $oswald;
   text-transform: uppercase;
 
-  border: 1px solid #cdcdcd;
+  outline: 1px solid #cdcdcd;
+  border: none;
+}
+
+.form__input:active,
+.form__input:focus {
+  outline: 2px solid #444444;
+  border: none;
+}
+
+.form__input:active + .form__icon path,
+.form__input:focus + .form__icon path {
+  fill: #68b738;
 }
 
 .form__input--comment {
   width: 280px;
   margin: 0;
+}
+
+.form__label--email,
+.form__label--phone {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 21px;
+  height: 21px;
 }
 
 .form__info {
