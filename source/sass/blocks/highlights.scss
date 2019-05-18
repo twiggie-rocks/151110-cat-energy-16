@@ -95,3 +95,13 @@
     text-align: right;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .highlights__text {
+    max-width: 370px;
+    margin-left: 0;
+    margin-bottom: 0;
+
+    text-align: left;
+  }
+}
