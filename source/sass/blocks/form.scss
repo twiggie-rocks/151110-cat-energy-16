@@ -256,6 +256,16 @@
     width: 70px;
   }
 
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__fieldset--general,
+  .form__fieldset--goal {
+    width: 570px;
+  }
+
   .form__button {
     width: 568px;
 

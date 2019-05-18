@@ -44,25 +44,27 @@
         <h1 class="page-main__title">Подбор программы</h1>
         <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="get" class="page-main__form form">
-          <fieldset class="form__fieldset">
-            <label class="form__label">Имя:*
-              <input type="text" name="name" class="form__input form__input--name" placeholder="Барсик">
-            </label>
-            <label class="form__label">Вес (кг):*
-              <input type="number" name="weight" class="form__input form__input--weight" placeholder="7">
-            </label>
-            <label class="form__label">Возраст (лет):
-              <input type="number" name="age" class="form__input form__input--age" placeholder="7">
-            </label>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--goal">
-            <input type="radio" name="goal" id="goal-weight-loss" value="weight-loss" class="form__radiobutton visually-hidden" checked>
-            <label for="goal-weight-loss" class="form__radio-label">Похудение</label>
-            <input type="radio" name="goal" id="goal-weight-gain" value="weight-gain" class="form__radiobutton visually-hidden">
-            <label for="goal-weight-gain" class="form__radio-label">Набор массы</label>
-            <input type="radio" name="goal" id="goal-none" value="none" class="form__radiobutton visually-hidden">
-            <label for="goal-none" class="form__radio-label">Не знаю (нужен ваш совет)</label>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__fieldset form__fieldset--general">
+              <label class="form__label">Имя:*
+                <input type="text" name="name" class="form__input form__input--name" placeholder="Барсик">
+              </label>
+              <label class="form__label">Вес (кг):*
+                <input type="number" name="weight" class="form__input form__input--weight" placeholder="7">
+              </label>
+              <label class="form__label">Возраст (лет):
+                <input type="number" name="age" class="form__input form__input--age" placeholder="7">
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--goal">
+              <input type="radio" name="goal" id="goal-weight-loss" value="weight-loss" class="form__radiobutton visually-hidden" checked>
+              <label for="goal-weight-loss" class="form__radio-label">Похудение</label>
+              <input type="radio" name="goal" id="goal-weight-gain" value="weight-gain" class="form__radiobutton visually-hidden">
+              <label for="goal-weight-gain" class="form__radio-label">Набор массы</label>
+              <input type="radio" name="goal" id="goal-none" value="none" class="form__radiobutton visually-hidden">
+              <label for="goal-none" class="form__radio-label">Не знаю (нужен ваш совет)</label>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset">
             <legend class="form__heading">Контактные данные (владельца кота)</legend>
             <label class="form__label form__label--email">E-mail:*
