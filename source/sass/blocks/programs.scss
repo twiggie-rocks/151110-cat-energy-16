@@ -5,10 +5,10 @@
 
 .programs__item {
   margin-bottom: 20px;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-right: 20px;
   padding-bottom: 20px;
-  padding-left: 22px;
+  padding-left: 21px;
 
   background-color: #f2f3f3;
 }
@@ -43,7 +43,7 @@
 
 .programs__icon--weight-loss::before {
   top: 0;
-  left: 7px;
+  left: 9px;
   width: 35px;
   height: 49px;
 
@@ -51,8 +51,8 @@
 }
 
 .programs__icon--weight-gain::before {
-  top: 10px;
-  left: -10px;
+  top: 13px;
+  left: -8px;
   width: 67px;
   height: 28px;
 
@@ -74,8 +74,8 @@
 
 .programs__description {
   margin: 0;
-  margin-bottom: 18px;
-  padding-bottom: 23px;
+  margin-bottom: 19px;
+  padding-bottom: 21px;
 
   font-size: 14px;
   line-height: 18px;
@@ -99,8 +99,8 @@
     content: "";
 
     position: absolute;
-    top: 4px;
-    left: 120px;
+    top: 7px;
+    left: 94px;
 
     width: 34px;
     height: 12px;
@@ -132,9 +132,9 @@
 
     min-height: 372px;
     margin-bottom: 30px;
-    padding-top: 75px;
+    padding-top: 78px;
     padding-right: 62px;
-    padding-bottom: 63px;
+    padding-bottom: 61px;
     padding-left: 52px;
   }
 
@@ -147,21 +147,21 @@
   .programs__icon {
     position: absolute;
     right: 42px;
-    top: 90px;
+    top: 92px;
     width: 200px;
     height: 200px;
   }
 
   .programs__icon--weight-loss::before {
-    top: 0;
-    left: 7px;
+    top: -10px;
+    left: 30px;
     width: 141px;
     height: 194px;
   }
 
   .programs__icon--weight-gain::before {
-    top: 10px;
-    left: -10px;
+    top: 45px;
+    left: -35px;
     width: 268px;
     height: 113px;
   }
@@ -181,6 +181,10 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      left: 130px;
+    }
   }
 }
 

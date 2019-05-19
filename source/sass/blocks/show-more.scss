@@ -2,8 +2,7 @@
   position: relative;
 
   width: 320px;
-  margin-bottom: 30px;
-  padding-top: 80px;
+  padding-top: 78px;
   padding-right: 19px;
   padding-bottom: 24px;
   padding-left: 19px;
@@ -16,7 +15,7 @@
     content: "";
 
     position: absolute;
-    top: 27px;
+    top: 25px;
     left: 45%;
 
     width: 31px;
@@ -52,7 +51,7 @@
 
 .show-more__button {
   width: 280px;
-  padding-top: 11px;
+  padding-top: 12px;
   padding-bottom: 11px;
 
   color: #444444;
@@ -72,7 +71,7 @@
 @media (min-width: $tablet-width) {
   .show-more::before {
     top: 55px;
-    left: 40%;
+    left: 41%;
 
     width: 61px;
     height: 61px;
@@ -82,7 +81,7 @@
 
   .show-more {
     width: 324px;
-    padding-top: 165px;
+    padding-top: 164px;
     padding-right: 35px;
     padding-bottom: 38px;
     padding-left: 35px;

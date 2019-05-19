@@ -10,9 +10,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin-bottom: -100px;
   }
 
   .catalog__item {
-    margin-bottom: 140px;
+    margin-bottom: 138px;
   }
 }

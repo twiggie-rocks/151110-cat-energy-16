@@ -1,5 +1,5 @@
 .example {
-  padding-top: 33px;
+  padding-top: 15px;
   padding-bottom: 38px;
 
   background-color: #f2f2f2;
@@ -12,7 +12,7 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
   padding: 0;
 
   font-size: 36px;
@@ -24,7 +24,7 @@
 
 .example__text {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   padding: 0;
 
   font-size: 14px;
@@ -33,16 +33,12 @@
   font-family: $arial;
 }
 
-.example__image {
-  margin-bottom: 35px;
-}
-
 .example__slider {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
-  margin: auto;
+  margin-left: 44px;
+  margin-right: 39px;
 }
 
 .example__slider-button {
@@ -79,11 +75,19 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .example__image {
+    width: 100vw;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 27px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .example {
     position: relative;
-    padding-top: 51px;
-    padding-bottom: 67px;
+    padding-bottom: 70px;
 
     background: none;
 
@@ -93,7 +97,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 462px;
+      height: 464px;
 
       background-color: #eaeaea;
       z-index: -1;
@@ -105,19 +109,29 @@
   }
 
   .example__title {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
 
     font-size: 60px;
   }
 
   .example__text {
-    margin-bottom: 56px;
+    margin-bottom: 53px;
 
     line-height: 24px;
   }
 
+  .example__left-column {
+    margin-bottom: 55px;
+  }
+
+  .example__image {
+    margin-bottom: 8px;
+    padding-left: 15px;
+  }
+
   .example__slider {
     width: 570px;
+    margin: auto;
   }
 
   .example__slider-scale {
@@ -136,7 +150,7 @@
   .example__slider-controls {
     position: relative;
     top: -14px;
-    left: 43%;
+    left: 47%;
     width: 34px;
     height: 34px;
 
@@ -149,7 +163,7 @@
       content: "";
       position: absolute;
       top: 40%;
-      left: 40%;
+      left: 37%;
 
       width: 8px;
       height: 8px;
@@ -161,6 +175,7 @@
 
   .example__slider-button {
     font-size: 20px;
+    line-height: 30px;
 
     border-bottom: 1px dotted #dcdcdc;
   }

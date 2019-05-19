@@ -7,7 +7,7 @@
 .highlights__block {
   position: relative;
 
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 
   text-align: center;
 }
@@ -15,7 +15,7 @@
 .highlights__title {
   display: block;
   width: 124px;
-  padding-top: 17px;
+  padding-top: 13px;
   padding-bottom: 18px;
 
   font-size: 24px;
@@ -30,26 +30,34 @@
 
 .highlights__desc {
   position: absolute;
-  top: 50px;
-  left: 16px;
-  max-width: 87px;
+  bottom: -16px;
+  left: 0;
+
+  width: 100%;
   margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
 
-  font-size: 12px;
-  line-height: 12px;
-  color: #444444;
-  font-family: $arial;
+  text-align: center;
 
-  background-color: #f2f2f2;
+  span {
+    display: inline-block;
+    max-width: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+    font-family: $arial;
+
+    background-color: #f2f2f2;
+  }
 }
 
 .highlights__text {
   flex-grow: 1;
 
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 
   font-size: 14px;
   line-height: 20px;
@@ -70,13 +78,18 @@
 
   .highlights__title {
     width: 162px;
+    padding-bottom: 20px;
 
     font-size: 30px;
     line-height: 37px;
   }
 
   .highlights__desc {
-    max-width: 142px;
+    bottom: -7px;
+  }
+
+  .highlights__desc span {
+    max-width: initial;
     padding-right: 7px;
     padding-left: 7px;
 
@@ -93,6 +106,14 @@
     font-size: 20px;
     line-height: 25px;
     text-align: right;
+  }
+
+  .highlights__text span {
+    display: block;
+
+    &:first-child {
+      margin-bottom: 5px;
+    }
   }
 }
 

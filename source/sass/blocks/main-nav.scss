@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 11px;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
 }
 
 .main-nav__index-link {
@@ -28,8 +28,9 @@
 }
 
 .main-nav__menu-toggle {
-  width: 20px;
+  width: 24px;
   height: 20px;
+  margin-right: 2px;
   padding: 0;
 
   border: none;
