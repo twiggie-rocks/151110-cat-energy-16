@@ -18,3 +18,9 @@
     margin-bottom: 138px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    margin-bottom: 140px;
+  }
+}

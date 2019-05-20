@@ -118,11 +118,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .highlights {
+    width: 270px;
+  }
+
+  .highlights__block {
+    margin-right: 0;
+  }
+
   .highlights__text {
     max-width: 370px;
     margin-left: 0;
     margin-bottom: 0;
 
     text-align: left;
+  }
+
+  .highlights__desc span {
+    background-color: #eaeaea;
   }
 }

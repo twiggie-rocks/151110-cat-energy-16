@@ -111,10 +111,15 @@
 
   .extra__list {
     width: 895px;
+    margin-bottom: 0;
   }
 
   .extra__item {
     border-right: none;
     border-left: none;
+  }
+
+  .extra__promo {
+    margin-bottom: 0;
   }
 }

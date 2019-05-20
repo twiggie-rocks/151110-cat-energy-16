@@ -62,9 +62,13 @@
   }
 
   .promo__text {
-    padding-top: 190px;
-    padding-left: 43px;
+    width: 160px;
+    margin: auto;
+    padding-top: 187px;
     padding-bottom: 43px;
-    padding-right: 43px;
+    padding-left: 0;
+    padding-right: 0;
+
+    text-align: center;
   }
 }

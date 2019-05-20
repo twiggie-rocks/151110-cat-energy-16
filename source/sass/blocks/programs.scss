@@ -199,6 +199,7 @@
     margin-right: 80px;
     margin-bottom: 0;
     padding-top: 43px;
+    padding-bottom: 63px;
 
     &:last-child {
       margin-right: 0;
@@ -220,20 +221,24 @@
   }
 
   .programs__icon--weight-loss::before {
-    top: 0;
-    left: 7px;
+    top: -4px;
+    left: 13px;
     width: 71px;
     height: 97px;
   }
 
   .programs__icon--weight-gain::before {
-    top: 10px;
-    left: -10px;
+    top: 23px;
+    left: -18px;
     width: 134px;
     height: 57px;
   }
 
   .programs__description {
     max-width: 500px;
+  }
+
+  .programs__link::after {
+    top: 3px;
   }
 }

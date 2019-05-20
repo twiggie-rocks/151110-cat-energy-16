@@ -113,6 +113,10 @@
 @media (min-width: $desktop-width) {
   .show-more {
     width: 245px;
+
+    &::before {
+      left: 38%;
+    }
   }
 
   .show-more__button {

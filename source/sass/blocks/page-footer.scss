@@ -125,7 +125,8 @@
   }
 
   .page-footer__wrapper {
-    width: 1200px;
+    width: 1220px;
+    padding-top: 45px;
   }
 
   .page-footer__banner {
@@ -135,11 +136,19 @@
     z-index: 1;
 
     width: 570px;
-    padding-top: 69px;
+    padding-top: 64px;
     padding-right: 90px;
     padding-bottom: 59px;
     padding-left: 76px;
 
     background-color: #ffffff;
+  }
+
+  .page-footer__address {
+    text-align: left;
+  }
+
+  .page-footer__logo-image {
+    margin-right: 411px;
   }
 }
