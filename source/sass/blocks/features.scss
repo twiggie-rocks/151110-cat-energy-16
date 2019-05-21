@@ -38,6 +38,41 @@
   margin-right: 20px;
 
   background-color: #68b738;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+
+.features__icon--contents {
+  background-image: url("/img/advantage-leaf@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/advantage-leaf@2x.png");
+  }
+}
+
+.features__icon--cooking {
+  background-image: url("/img/advantage-powder@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/advantage-powder@2x.png");
+  }
+}
+
+.features__icon--serving {
+  background-image: url("/img/advantage-dining@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/advantage-dining@2x.png");
+  }
+}
+
+.features__icon--time {
+  background-image: url("/img/advantage-clock@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/advantage-clock@2x.png");
+  }
 }
 
 .features__text {
@@ -52,7 +87,7 @@
   }
 
   .features__title {
-    margin-bottom: 70px;
+    margin-bottom: 74px;
 
     font-size: 60px;
     line-height: 60px;
@@ -69,7 +104,7 @@
     flex-wrap: wrap;
     width: 250px;
     margin-right: 133px;
-    margin-bottom: 135px;
+    margin-bottom: 132px;
 
     font-size: 16px;
     line-height: 24px;
@@ -111,6 +146,8 @@
     width: 80px;
     height: 80px;
     margin-bottom: 32px;
+
+    background-size: 65%;
   }
 
   .features__text {
@@ -130,5 +167,6 @@
   .features__item {
     width: 245px;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }

@@ -1,12 +1,13 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
+  padding-top: 7px;
   padding-bottom: 20px;
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-size: 16px;
   line-height: 16px;
   font-family: $arial;
@@ -14,8 +15,23 @@
   text-decoration: none;
 }
 
+.copyright__link:focus path,
+.copyright__link:hover path,
+.copyright__link:active path {
+  fill: #68b738;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+.copyright__image {
+  margin-right: -7px;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     width: 165px;
+    padding: 0;
   }
 }

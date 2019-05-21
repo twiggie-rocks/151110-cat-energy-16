@@ -10,8 +10,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin-bottom: -100px;
   }
 
+  .catalog__item {
+    margin-bottom: 138px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .catalog__item {
     margin-bottom: 140px;
   }

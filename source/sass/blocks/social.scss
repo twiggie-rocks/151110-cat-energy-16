@@ -5,7 +5,11 @@
 
 .social__list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
+  margin-left: 73px;
+  margin-right: 82px;
   padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -13,8 +17,34 @@
   list-style: none;
 }
 
+.social__link:hover path,
+.social__link:focus path,
+.social__link:active path {
+  fill: #68b738;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .social {
+    width: 125px;
     border: none;
+  }
+
+  .social__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .social__link--vk svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--fb svg {
+    width: 14px;
+    height: 28px;
   }
 }
