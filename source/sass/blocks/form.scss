@@ -214,6 +214,10 @@
   border: none;
 }
 
+.form__input:invalid {
+  outline: 2px solid #ff8282;
+}
+
 .form__input:active + .form__icon path,
 .form__input:focus + .form__icon path {
   fill: #68b738;

@@ -122,6 +122,8 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     position: relative;
+
+    overflow: hidden;
   }
 
   .page-footer__wrapper {
@@ -146,6 +148,10 @@
 
   .page-footer__address {
     text-align: left;
+  }
+
+  .page-footer__map {
+    width: 150%;
   }
 
   .page-footer__logo-image {

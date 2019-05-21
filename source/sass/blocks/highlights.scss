@@ -119,11 +119,12 @@
 
 @media (min-width: $desktop-width) {
   .highlights {
-    width: 270px;
+    width: 366px;
   }
 
   .highlights__block {
     margin-right: 0;
+    margin-bottom: 57px;
   }
 
   .highlights__text {
@@ -132,6 +133,14 @@
     margin-bottom: 0;
 
     text-align: left;
+  }
+
+  .highlights__text span {
+    display: inline-block;
+
+    &:first-child {
+      margin-right: 60px;
+    }
   }
 
   .highlights__desc span {
