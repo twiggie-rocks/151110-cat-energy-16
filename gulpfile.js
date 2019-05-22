@@ -21,19 +21,19 @@ var include = require("posthtml-include");
 var server = require("browser-sync").create();
 
 gulp.task("clean", function () {
- return del("build");
+  return del("build");
 });
 
 gulp.task("copy", function () {
- return gulp.src([
- "source/fonts/**/*.{woff,woff2}",
- "source/img/**",
- "source/js/**",
- "source/*.ico"
- ], {
- base: "source"
- })
- .pipe(gulp.dest("build"));
+  return gulp.src([
+  "source/fonts/**/*.{woff,woff2}",
+  "source/img/**",
+  "source/js/**",
+  "source/*.ico"
+  ], {
+  base: "source"
+  })
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("css", function () {
@@ -57,7 +57,7 @@ gulp.task("images", function() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
-   ]))
+    ]))
     .pipe(gulp.dest("source/img"));
 });
 
@@ -95,16 +95,16 @@ gulp.task("server", function () {
 });
 
 gulp.task("refresh", function (done) {
- server.reload();
- done();
+  server.reload();
+  done();
 });
 
 gulp.task("build", gulp.series(
- "clean",
- "copy",
- "css",
- "sprite",
- "html"
+  "clean",
+  "copy",
+  "css",
+  "sprite",
+  "html"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
