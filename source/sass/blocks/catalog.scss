@@ -20,7 +20,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__list {
+    justify-content: flex-start;
+  }
+
   .catalog__item {
+    margin-right: 80px;
     margin-bottom: 140px;
+  }
+
+  .catalog__item:nth-child(4n) {
+    margin-right: 0;
   }
 }
